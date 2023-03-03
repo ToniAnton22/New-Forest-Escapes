@@ -10,6 +10,6 @@ app.use(require("./routes/record"))
 
 app.listen(port, () => {
   // perform a database connection when server starts
-
+  console.log(`test`)
   console.log(`Server is running on port: ${port}`)
 })
