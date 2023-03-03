@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose")
 
-const Schema = mongoose.schema;
+const Schema = mongoose.schema
 
 const usersSchema = new Schema({
   FirstName: {
@@ -11,10 +11,10 @@ const usersSchema = new Schema({
     type: String,
     required: true,
   },
-  delegated:{
-    type:String,
-    required:true,
-  }
-});
+  delegated: {
+    type: String,
+    required: true,
+  },
+})
 
-module.exports = mongoose.model("Users", usersSchema);
+module.exports = mongoose.model("Users", usersSchema)

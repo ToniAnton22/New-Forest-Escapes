@@ -2,21 +2,15 @@ const mongoose = require("mongoose")
 
 const Schema = mongoose.schema
 
-
 const instructionsSchema = mongoose.schema({
   picture: { type: Image, required: true },
   details: { type: String, required: true },
-  date: { timestaps:true, required: true },
-  location: { type:
-    String,
-    enum: ['Point']
-
-  },
-  
+  date: { timestaps: true, required: true },
+  location: { type: String, enum: ["Point"] },
 })
 
 const housesSchema = mongoose.schema({
-  houseid: {type: String, required: true},
+  houseid: { type: String, required: true },
   houseName: { type: String, required: true },
   readings: { type: String, required: true },
   address: { type: String, required: true },
@@ -33,7 +27,7 @@ const homeownersSchema = new Schema({
   houseOwner: {
     type: Number,
     required: true,
-  }
+  },
 })
 
 module.exports = mongoose.model("Homeowners", homeownersSchema)

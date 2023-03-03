@@ -2,7 +2,6 @@ const mongoose = require("mongoose")
 
 const Schema = mongoose.schema
 
-
 const bookingSchema = new Schema({
   referenceid: {
     type: String,
@@ -24,7 +23,7 @@ const visitorsSchema = new Schema({
     type: Number,
     required: true,
   },
-  booking:[bookingSchema]
+  booking: [bookingSchema],
 })
 
 module.exports = mongoose.model("Visitors", visitorsSchema)
