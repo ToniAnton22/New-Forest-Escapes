@@ -1,15 +1,29 @@
+require("dotenv").config()
 const express = require("express")
-const app = express()
 const cors = require("cors")
-require("dotenv").config({ path: "./config.env" })
-const port = process.env.PORT || 5000
+const mongoose = require("mongoose")
+const app = express()
+mongoose.set("strictQuery", false)
+const agencyroutes = require("./routes/Agencyroutes")
+
+app.use(express.urlencoded({extended:true}))
 app.use(cors())
 app.use(express.json())
-app.use(require("./routes/record"))
-// get driver connection
 
-app.listen(port, () => {
-  // perform a database connection when server starts
-  console.log(`testtest`)
-  console.log(`Server is running on port: ${port}`)
-})
+app.set("view engine", "ejs")
+
+//database connection
+
+mongoose.connect(process.env.MONGO_URI)
+    .then((result) => app.listen(5000))
+    .catch((err) => console.log(err))
+    
+    
+      
+
+      
+// agency routes
+app.use(agencyroutes)
+
+
+
