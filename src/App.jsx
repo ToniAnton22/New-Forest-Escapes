@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/homeowner" element={<HomeownerHomepage />} />
+        <Route exact path="/" element={<HomeownerHomepage />} />
         <Route exact path="/setenergy" element={<HomeownerSetEnergy />} />
         <Route exact path="/energyusage" element={<HomeownerViewEnergy />} />
         <Route exact path="/instructions" element={<HomeownerInstructions />} />
