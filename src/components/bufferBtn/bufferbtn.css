@@ -1,0 +1,17 @@
+.bufferBtn {
+    width: 10em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+}
+
+.bufferBtn:hover {
+    background-color: #6ab46d;
+}
