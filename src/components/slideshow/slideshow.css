@@ -1,0 +1,26 @@
+.slideshow {
+    width: 100%;
+}
+
+.headerImg {
+    width: 100vw;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../assets/img1.jpg);
+    animation-name: animate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(../../assets/img1.jpg);
+    }
+
+    100% {
+        background-image: url(../../assets/img2.jpg);
+    }
+}

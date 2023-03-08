@@ -1,0 +1,63 @@
+.div{
+position: relative; 
+z-index: 0; 
+margin-bottom: 1.5rem; 
+width: 100%; 
+
+}
+
+.input{
+    display: block; 
+padding-left: 0;
+padding-right: 0; 
+padding-top: 0.625rem;
+padding-bottom: 0.625rem; 
+background-color: transparent; 
+color: #111827; 
+font-size: 0.875rem;
+line-height: 1.25rem; 
+width: 100%; 
+border-width: 0; 
+border-bottom-width: 2px; 
+border-color: #D1D5DB; 
+appearance: none; 
+}
+
+.label{
+position: absolute; 
+top: 0.75rem; 
+transition-duration: 300ms; 
+--transform-scale-x: .75;
+--transform-scale-y: .75; 
+--transform-translate-y: -1.5rem; 
+color: #6B7280; 
+font-size: 0.875rem;
+line-height: 1.25rem; 
+}
+
+.btn{
+    padding-top: 0.625rem;
+padding-bottom: 0.625rem; 
+padding-left: 1.25rem;
+padding-right: 1.25rem; 
+background-color: #1D4ED8; 
+color: #ffffff; 
+font-size: 0.875rem;
+line-height: 1.25rem; 
+font-weight: 500; 
+text-align: center; 
+width: 100%; 
+border-radius: 0.5rem; 
+}
+
+@media (min-width: 640px) { 
+  width: auto; 
+ }
+
+
+
+
+:hover {
+ background-color: #1E40AF; 
+ }
+

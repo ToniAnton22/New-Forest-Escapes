@@ -1,0 +1,11 @@
+.footer {
+    background-color: rgb(220 252 231);
+    border: 2px solid black;
+    flex: 0.3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ h1{
+    color: black;
+ }
