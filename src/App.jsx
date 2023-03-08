@@ -13,13 +13,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<HomeownerHomepage />} />
-        <Route exact path="/setenergy" element={<HomeownerSetEnergy />} />
-        <Route exact path="/energyusage" element={<HomeownerViewEnergy />} />
-        <Route exact path="/instructions" element={<HomeownerInstructions />} />
-        <Route exact path="/generatemeter" element={<HomeownerGenerateMeter />} />
-        <Route exact path="/createreadings" element={<HomeownerCreateReadings />} />
-      </Routes>
+         <Route exact path="/VisitorsHomePage" element={<VisitorsHomePage />} />
+         <Route exact path="/Prepostmeterreading" element={<Prepostmeterreading />} />
+         </Routes>
     </BrowserRouter>
   )
 }
