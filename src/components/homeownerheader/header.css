@@ -88,6 +88,10 @@
     list-style-type: none;
 }
 
+.topListItem:visited {
+    color: rgb(29, 92, 180);
+}
+
 .topListItem:hover {
     color: rgb(6, 52, 109);
 }
@@ -102,6 +106,10 @@
 .link {
     text-decoration: none;
 }
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
 
 @media only screen and (max-width: 1024px) {
     .nav-btn {

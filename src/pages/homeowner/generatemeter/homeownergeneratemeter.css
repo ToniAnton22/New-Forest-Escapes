@@ -1,6 +1,6 @@
 .homeownerGenerateMeterContainer {
     display: flex;
-    height: 94vh;
+    height: 100vh;
 }
 
 .homeownerGenerateMeterLeft {
@@ -16,7 +16,7 @@
 }
 
 .homeownerGenerateMeterTitle {
-    height: 94vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,6 +1,6 @@
 .homeownerInstructionsContainer {
     display: flex;
-    height: 94vh;
+    height: 100vh;
 }
 
 .homeownerInstructionsLeft {
@@ -16,7 +16,7 @@
 }
 
 .homeownerInstructionsTitle {
-    height: 94vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

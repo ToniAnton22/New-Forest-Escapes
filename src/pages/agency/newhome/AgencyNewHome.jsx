@@ -1,12 +1,14 @@
 import './agencynewhome.css'
 import React from 'react'
-import AgencyHeader from '../../../components/agencyheader/AgencyHeader'
 import SubmitBtn from '../../../components/submitBtn/SubmitBtn'
+import { IoHome } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function AgencyNewHome() {
+    const navigate = useNavigate();
     return (
         <>
-        <AgencyHeader/>
         <div className="agencyNewHomeContainer">
             <div className="agencyNewHomeLeft">
             <div className="agencyNewHomeBackground">
@@ -17,6 +19,7 @@ export default function AgencyNewHome() {
             </div>
             <div className="agencyNewHomeRight">
                 <form className='agencyNewHomeForm'>
+                <Link className="" onClick={() => navigate(-1)}><IoHome size="3em" color="black"/></Link>
                     <label className='agencyNewHomeLabel'>
                         Homeowner Name
                     </label>

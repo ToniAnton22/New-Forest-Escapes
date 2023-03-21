@@ -1,11 +1,13 @@
 import './agencytotalcost.css'
 import React from 'react'
-import AgencyHeader from '../../../components/agencyheader/AgencyHeader'
+import { IoHome } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function AgencyTotalCost() {
+    const navigate = useNavigate();
     return (
         <>
-        <AgencyHeader/>
         <div className="agencyTotalCostContainer">
             <div className="agencyTotalCostLeft">
             <div className="agencyTotalCostBackground">
@@ -16,6 +18,7 @@ export default function AgencyTotalCost() {
             </div>
             <div className="agencyTotalCostRight">
                 <form className='agencyTotalCostForm'>
+                <Link className="" onClick={() => navigate(-1)}><IoHome size="3em" color="black"/></Link>
                     <label className='agencyTotalCostLabel'>
                         Home Reference
                     </label>

@@ -13,6 +13,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(29, 92, 180);
 }
 
 .box-inside p {
@@ -126,9 +127,6 @@ img {
     background-color: rgb(246, 243, 243);
 } */
 
-a, a:visited, a:hover, a:active {
-    color: rgb(29, 92, 180);
-  }
 
   .agencyHomeTitleText {
     font-size: 40px;

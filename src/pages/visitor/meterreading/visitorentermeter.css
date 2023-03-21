@@ -1,22 +1,22 @@
-.homeownerSetEnergyContainer {
+.visitorCreateReadingsContainer {
     display: flex;
-    height: 100vh;
+    height: 94vh;
 }
 
-.homeownerSetEnergyLeft {
+.visitorCreateReadingsLeft {
     flex: 0.6;
-    background-image: url(https://newforestescapes.com/wp-content/uploads/2020/10/IMG_0160-640x500.jpg);
+    background-image: url(https://newforestescapes.com/wp-content/uploads/2022/10/unnamed-20.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.homeownerSetEnergyRight {
+.visitorCreateReadingsRight {
     flex: 1;
 }
 
-.homeownerSetEnergyTitle {
-    height: 100vh;
+.visitorCreateReadingsTitle {
+    height: 94vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,43 +30,44 @@
     font-size: 4em;
 }
 
-.homeownerSetEnergyRight {
+.visitorCreateReadingsRight {
     background-color: rgb(223, 220, 220);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.homeownerSetEnergyForm {
+.visitorCreateReadingsForm {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.homeownerSetEnergyLabel {
+.visitorCreateReadingsLabel {
     text-align: center;
     margin-top: 10px;
     font-weight: 400;
     font-family: Lora;
 }
 
-.homeownerSetEnergyInput {
+.visitorCreateReadingsInput {
     width: 40%;
     margin-top: 15px;
     padding: 8px;
     border: none;
     border-radius: 4px;
+    text-align: center;
 }
 
-.homeownerSetEnergyInput:focus {
+.visitorCreateReadingsInput:focus {
     outline: none;
 }
 
-.homeownerSetEnergyInput:hover {
+.visitorCreateReadingsInput:hover {
     outline: 2px solid rgb(144, 166, 218);
 }
 
-/* .homeownerSetEnergySubmit {
+/* .visitorCreateReadingsSubmit {
     width: 10em;
     margin-top: 20px;
     padding: 10px;
@@ -78,6 +79,27 @@
     border: none;
 } */
 
-.homeownerSetEnergySubmit:hover {
+.visitorCreateReadingsSubmit:hover {
     background-color: rgb(49, 138, 206);
+}
+
+hr {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.visitorCreateReadingsPicture {
+    width: 40%;
+    margin-top: 15px;
+    padding: 8px;
+    padding-bottom: 110px;
+    border: none;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.visitorCreateReadingsPicture:focus {
+    outline: none;
+    border: none;
 }

@@ -1,4 +1,4 @@
-import "./header.css"
+import "./visitorheader.css"
 import React from "react"
 // import { faCentercode } from "@fortawesome/free-brands-svg-icons"
 // import { FaTimes, FaBars } from "react-icons/fa"
@@ -25,11 +25,11 @@ export default function Header() {
       <div className="topCenter">
         <ul className="topList"ref={navRef}>
           <li className="topListItem"><Link className="link" to="/visitor">Home</Link></li>
-          <li className="topListItem"><Link className="link" to="/visitor/setenergy">Set Energy Usage</Link></li>
-          <li className="topListItem"><Link className="link" to="/visitor/energyusage">View Energy Usage</Link></li>
+          <li className="topListItem"><Link className="link" to="/createreadings">Meter Reading</Link></li>
+          {/* <li className="topListItem"><Link className="link" to="/visitor/energyusage">View Energy Usage</Link></li>
           <li className="topListItem"><Link className="link" to="/visitor/instructions">Instructions</Link></li>
           <li className="topListItem"><Link className="link" to="/visitor/generatemeter">Meter Reading</Link></li>
-          <li className="topListItem"><Link className="link" to="/visitor/createreadings">Create Meter Reading</Link></li>
+          <li className="topListItem"><Link className="link" to="/visitor/createreadings">Create Meter Reading</Link></li> */}
           {/* <li className="topListItem">{"LOGOUT"}</li> */}
           <button className ="nav-btn nav-close-btn" onClick={hideNavbar}>
           {/* <FaTimes /> */}

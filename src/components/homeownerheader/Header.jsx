@@ -24,7 +24,7 @@ export default function Header() {
       </div>
       <div className="topCenter">
         <ul className="topList"ref={navRef}>
-          <li className="topListItem"><Link className="link" to="/homeowner">Home</Link></li>
+          {/* <li className="topListItem"><Link className="link" to="/homeowner">Home</Link></li> */}
           <li className="topListItem"><Link className="link" to="/setenergy">Set Energy Usage</Link></li>
           <li className="topListItem"><Link className="link" to="/energyusage">View Energy Usage</Link></li>
           <li className="topListItem"><Link className="link" to="/instructions">Instructions</Link></li>

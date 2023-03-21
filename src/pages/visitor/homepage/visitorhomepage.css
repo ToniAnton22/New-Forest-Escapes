@@ -13,28 +13,31 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-.homeownerHomeContainer {
+.box-inside p {
+    margin-top: 3px
+}
+
+.visitorHomeContainer {
     display: flex;
     flex-direction: column;
     height: 94vh;
 }
 
-.homeownerHomeImage {
+.visitorHomeImage {
     display: flex;
     flex: 1.4;
     justify-content: center;
     align-items: center;
     height: 200px;
-    background-image: url(https://newforestescapes.com/wp-content/uploads/2022/10/Ridge-Cottage-Garden-16.9.22-21-1500x800.jpg);
+    background-image: url(https://newforestescapes.com/wp-content/uploads/2023/02/Ferny-Down-Web-28.2.23-10.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.homeownerHomeTitle {
+.visitorHomeTitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,11 +51,11 @@ html {
     font-family: Lora;
 }
 
-.homeownerWrapper {
+.visitorWrapper {
     flex: 2;
 }
 
-.homeownerDashboardTop, .homeownerDashboardBot {
+.visitorDashboardTop, .visitorDashboardBot {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,11 +63,11 @@ html {
     gap: 30px;
 }
 
-.homeownerDashboardTop {
+.visitorDashboardTop {
     margin-top: 50px;
 }
 
-.homeownerDashboardBot {
+.visitorDashboardBot {
     margin-top: 20px;
 }
 
@@ -91,7 +94,7 @@ img {
     height: 100px;
 }
 
-/* .homeownerHomeMain {
+/* .visitorHomeMain {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +103,7 @@ img {
     background-color: rgb(230, 231, 232);
 } */
 
-/* .homeownerHomeBox {
+/* .visitorHomeBox {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,19 +122,22 @@ img {
     border: 2px solid red;
 } */
 
-/* .homeownerHomeBox:hover {
+/* .visitorHomeBox:hover {
     background-color: rgb(246, 243, 243);
 } */
 
+a, a:visited, a:hover, a:active {
+    
+  }
 
-  .homeownerHomeTitleText {
+  .visitorHomeTitleText {
     font-size: 40px;
   }
 
-  .homeownerHomeText {
+  .visitorHomeText {
     font-size: 20px;
   }
 
-  .homeownerHomeTitle p {
+  .visitorHomeTitle p {
     font-size: 20px;
   }

@@ -1,12 +1,14 @@
 import './homeownerinstructions.css'
 import React from 'react'
-import Header from '../../../components/homeownerheader/Header'
 import SubmitBtn from '../../../components/submitBtn/SubmitBtn'
+import { IoHome } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function HomeownerInstructions() {
+  const navigate = useNavigate();
   return (
     <>
-    <Header/>
     <div className="homeownerInstructionsContainer">
         <div className="homeownerInstructionsLeft">
         <div className="homeownerInstructionsBackground">
@@ -17,6 +19,7 @@ export default function HomeownerInstructions() {
         </div>
         <div className="homeownerInstructionsRight">
             <form className='homeownerInstructionsForm'>
+            <Link className="" onClick={() => navigate(-1)}><IoHome size="3em" color="black"/></Link>
                 <label className='homeownerInstructionsLabel'>
                     Home Reference
                 </label>

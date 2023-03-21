@@ -1,6 +1,6 @@
 .agencyTotalCostContainer {
     display: flex;
-    height: 94vh;
+    height: 100vh;
 }
 
 .agencyTotalCostLeft {
@@ -16,7 +16,7 @@
 }
 
 .agencyTotalCostTitle {
-    height: 94vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,11 +1,13 @@
 import './homeownergeneratemeter.css'
 import React from 'react'
-import Header from '../../../components/homeownerheader/Header'
+import { IoHome } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function HomeownerGenerateMeter() {
+    const navigate = useNavigate();
   return (
     <>
-    <Header/>
     <div className="homeownerGenerateMeterContainer">
         <div className="homeownerGenerateMeterLeft">
         <div className="homeownerGenerateMeterBackground">
@@ -16,6 +18,7 @@ export default function HomeownerGenerateMeter() {
         </div>
         <div className="homeownerGenerateMeterRight">
             <form className='homeownerGenerateMeterForm'>
+            <Link className="" onClick={() => navigate(-1)}><IoHome size="3em" color="black"/></Link>
                 <label className='homeownerGenerateMeterLabel'>
                     Image
                 </label>

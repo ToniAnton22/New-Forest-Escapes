@@ -1,13 +1,15 @@
 import './homeownerviewenergy.css'
 import React from 'react'
-import Header from '../../../components/homeownerheader/Header'
 import BufferBtn from '../../../components/bufferBtn/BufferBtn'
 import QRCode from "react-qr-code";
+import { useNavigate } from 'react-router-dom';
+import { IoHome } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 export default function HomeownerViewEnergy() {
+    const navigate = useNavigate();
   return (
     <>
-    <Header/>
     <div className="homeownerViewEnergyContainer">
         <div className="homeownerViewEnergyLeft">
         <div className="homeownerViewEnergyBackground">
@@ -18,6 +20,7 @@ export default function HomeownerViewEnergy() {
         </div>
         <div className="homeownerViewEnergyRight">
             <form className='homeownerViewEnergyForm'>
+            <Link className="" onClick={() => navigate(-1)}><IoHome size="3em" color="black"/></Link>
                 <label className='homeownerViewEnergyLabel'>
                     Home Address
                 </label>
