@@ -42,7 +42,7 @@ export default function Header() {
       <button className ="nav-btn" onClick={showNavbar}>
           {/* <FaBars /> */}
           </button>
-      <li className="topListItemAgency"><Link className="link" to="/myaccount">My Account</Link></li>
+      <li className="topListItemAgency"><Link className="link" to="/login">My Account</Link></li>
       </div>
     </div>
   )

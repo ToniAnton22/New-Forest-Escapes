@@ -108,7 +108,7 @@
 }
 
 a, a:visited, a:hover, a:active {
-    color: inherit;
+    color: rgb(29, 92, 180);
   }
 
 @media only screen and (max-width: 1024px) {

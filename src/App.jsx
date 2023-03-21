@@ -11,6 +11,8 @@ import AgencyHomepage from "./pages/agency/homepage/AgencyHomepage"
 import AgencyTotalCost from "./pages/agency/totalcost/AgencyTotalCost"
 import AgencyNewHome from "./pages/agency/newhome/AgencyNewHome"
 import VisitorHomepage from "./pages/visitor/homepage/VisitorHomepage"
+import Login from "./pages/account/login/Login"
+import Register from "./pages/account/register/Register"
 
 function App() {
   return (
@@ -28,8 +30,12 @@ function App() {
         <Route exact path="/totalcost" element={<AgencyTotalCost />} />
         <Route exact path="/newhome" element={<AgencyNewHome />} />
         {/* Visitor  */}
+        <Route exact path="/" element={<HomeownerHomepage />} />
         <Route exact path="/visitor" element={<VisitorHomepage />} />
         <Route exact path="/totalcost" element={<AgencyNewHome />} />
+        {/* Account  */}
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   )

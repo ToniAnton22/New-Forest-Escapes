@@ -36,7 +36,12 @@ export default function HomeownerViewEnergy() {
                 <label className='homeownerViewEnergyDelegate'>
                     Delegate Ability
                 </label>
-                <input type="text" className='homeownerViewEnergyInput'/>
+                <select name="delegate" id="delegate">
+                    <option value="cleaner">Cleaner</option>
+                    <option value="gardener">Gardener</option>
+                    <option value="propertyManager">Property Manager</option>
+                    <option value="electrician">Electrician</option>
+                </select>
                 <QRCode 
         style={{ height: "auto", maxWidth: "100px", width: "100px", marginTop: "16px" }}
         value='google.com'/>
