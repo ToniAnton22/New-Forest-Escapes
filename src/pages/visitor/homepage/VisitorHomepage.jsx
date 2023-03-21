@@ -18,11 +18,9 @@ export default function VisitorHomepage() {
         </div>
         <div className="visitorWrapper">
         <div className="visitorDashboardTop">
-            <Link className="box" to="/createreadings"><div className="box-inside"><SlPencil display="flex" size="2.5em"/><p>Create Meter Reading</p></div></Link>
-            <Link className="box" to="/totalcost"><div className="box-inside"><SlCreditCard display="flex" size="3em"/><p>Total Cost</p></div></Link>
-            <Link className="box" to="/generatemeter"><div className="box-inside"><SlSpeedometer display="flex" size="3em"/><p>Meter Reading</p></div></Link>
-        </div>
-        <div className="visitorDashboardBot">
+            <Link className="boxVisitor" to="/createreadings"><div className="box-inside"><SlPencil display="flex" size="2.5em"/><p>Create Meter Reading</p></div></Link>
+            <Link className="boxVisitor" to="/totalcost"><div className="box-inside"><SlCreditCard display="flex" size="3em"/><p>Total Cost</p></div></Link>
+            <Link className="boxVisitor" to="/generatemeter"><div className="box-inside"><SlSpeedometer display="flex" size="3em"/><p>Meter Reading</p></div></Link>
         </div>
         </div>
       </div>

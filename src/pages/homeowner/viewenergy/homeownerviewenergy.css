@@ -90,3 +90,42 @@
 .homeownerViewEnergySubmit:hover {
     background-color: rgb(49, 138, 206);
 }
+
+@media only screen and (max-width: 1024px) {
+    .homeownerViewEnergyContainer {
+        flex-direction: column;
+    }
+
+    .homeownerViewEnergyTitle {
+        height: 40vh;
+    }
+
+    .homeownerViewEnergyInput {
+        width: 60%;
+    }
+
+    #delegate {
+        width: 60%;
+    }
+
+    .homeownerViewEnergyTitle {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .homeownerViewEnergyContainer {
+        flex-direction: column;
+    }
+
+    .homeownerViewEnergyTitle {
+        height: 40vh;
+    }
+
+    .agencyTotalCostInput {
+        width: 60%;
+    }
+
+    .homeownerViewEnergyTitle {
+        font-size: 40px;
+    }
+}

@@ -66,18 +66,84 @@
     outline: 2px solid rgb(144, 166, 218);
 }
 
-/* .homeownerInstructionsSubmit {
-    width: 10em;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: rgb(0 121 211);
-    cursor: pointer;
-    border-radius: 3px;
-    color: white;
-    font-weight: bold;
-    border: none;
-} */
-
 .homeownerInstructionsSubmit:hover {
     background-color: rgb(49, 138, 206);
+}
+
+@media only screen and (max-width: 1024px) {
+    .homeownerInstructionsContainer {
+        flex-direction: column;
+    }
+
+    .homeownerInstructionsTitle {
+        height: 40vh;
+    }
+
+    .homeownerInstructionsInput {
+        width: 60%;
+    }
+
+    #delegate {
+        width: 60%;
+    }
+
+    .homeownerInstructionsTitle {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .homeownerInstructionsContainer {
+        flex-direction: column;
+    }
+    @media only screen and (max-width: 1024px) {
+        .homeownerViewEnergyContainer {
+            flex-direction: column;
+        }
+    
+        .homeownerViewEnergyTitle {
+            height: 40vh;
+        }
+    
+        .homeownerViewEnergyInput {
+            width: 60%;
+        }
+    
+        #delegate {
+            width: 60%;
+        }
+    
+        .homeownerViewEnergyTitle {
+            font-size: 40px;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+        .homeownerViewEnergyContainer {
+            flex-direction: column;
+        }
+    
+        .homeownerViewEnergyTitle {
+            height: 40vh;
+        }
+    
+        .agencyTotalCostInput {
+            width: 60%;
+        }
+    
+        .homeownerViewEnergyTitle {
+            font-size: 40px;
+        }
+    }
+    
+    .homeownerInstructionsTitle {
+        height: 40vh;
+    }
+
+    .agencyTotalCostInput {
+        width: 60%;
+    }
+
+    .homeownerInstructionsTitle {
+        font-size: 40px;
+    }
 }

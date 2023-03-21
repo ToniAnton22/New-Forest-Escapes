@@ -96,3 +96,30 @@
     outline: none;
     border: none;
 }
+
+@media only screen and (max-width: 1024px) {
+    .homeownerGenerateMeterContainer {
+        flex-direction: column;
+    }
+
+    .homeownerGenerateMeterTitle, .homeownerGenerateMeterLeft {
+        height: 40vh;
+        font-size: 30px;
+    }
+    .homeownerGenerateMeterLabel, .homeownerGenerateMeterInput, .homeownerGenerateMeterPicture {
+        width: 80%;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1898px) {
+
+}
+
+@media only screen and (min-width: 1899px) {
+
+}

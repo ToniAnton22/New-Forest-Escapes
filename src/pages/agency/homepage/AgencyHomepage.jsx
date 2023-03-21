@@ -19,15 +19,15 @@ export default function AgencyHomepage() {
         </div>
         <div className="agencyWrapper">
         <div className="agencyDashboardTop">
-            <Link className="box" to="/setenergy"><div className="box-inside"><SlEnergy display="flex" size="3em"/><p>Set Energy Usage</p></div></Link>
-            <Link className="box" to="/energyusage"><div className="box-inside"><SlBookOpen display="flex" size="3em"/><p>View Energy Usage</p></div></Link>
-            <Link className="box" to="/instructions"><div className="box-inside"><SlSettings display="flex" size="3em"/><p>Instructions</p></div></Link>
-            <Link className="box" to="/totalcost"><div className="box-inside"><SlCreditCard display="flex" size="3em"/><p>Total Cost</p></div></Link>
+            <Link className="boxAgency" to="/setenergy"><div className="box-inside"><SlEnergy display="flex" size="3em"/><p>Set Energy Usage</p></div></Link>
+            <Link className="boxAgency" to="/energyusage"><div className="box-inside"><SlBookOpen display="flex" size="3em"/><p>View Energy Usage</p></div></Link>
+            <Link className="boxAgency" to="/instructions"><div className="box-inside"><SlSettings display="flex" size="3em"/><p>Instructions</p></div></Link>
+            <Link className="boxAgency" to="/totalcost"><div className="box-inside"><SlCreditCard display="flex" size="3em"/><p>Total Cost</p></div></Link>
         </div>
         <div className="agencyDashboardBot">
-        <Link className="box" to="/generatemeter"><div className="box-inside"><SlSpeedometer display="flex" size="3em"/><p>Meter Reading</p></div></Link>
-        <Link className="box" to="/createreadings"><div className="box-inside"><SlPencil display="flex" size="2.5em"/><p>Create Meter Reading</p></div></Link>
-        <Link className="box" to="/newhome"><div className="box-inside"><SlHome display="flex" size="2.5em"/><p>New Home</p></div></Link>
+        <Link className="boxAgency" to="/generatemeter"><div className="box-inside"><SlSpeedometer display="flex" size="3em"/><p>Meter Reading</p></div></Link>
+        <Link className="boxAgency" to="/createreadings"><div className="box-inside"><SlPencil display="flex" size="2.5em"/><p>Create Meter Reading</p></div></Link>
+        <Link className="boxAgency" to="/newhome"><div className="box-inside"><SlHome display="flex" size="2.5em"/><p>New Home</p></div></Link>
         </div>
         </div>
           {/* <div className="agencyHomeMain">
