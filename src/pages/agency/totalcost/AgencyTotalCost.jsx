@@ -25,6 +25,7 @@ export default function AgencyTotalCost() {
                     </label>
                     <input type="text" className='agencyTotalCostInput'/>
                     <button className='agencyTotalCostBtn'>Calculate</button>
+                    <div className="agencyTotalCostResult"></div>
                 </form>
             </div>
         </div>
