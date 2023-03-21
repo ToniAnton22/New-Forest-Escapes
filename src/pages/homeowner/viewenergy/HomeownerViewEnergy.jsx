@@ -1,6 +1,6 @@
 import './homeownerviewenergy.css'
 import React from 'react'
-import Header from '../../../components/header/Header'
+import Header from '../../../components/homeownerheader/Header'
 import BufferBtn from '../../../components/bufferBtn/BufferBtn'
 import QRCode from "react-qr-code";
 
