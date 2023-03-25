@@ -1,0 +1,104 @@
+.homeownerCreateReadingsContainer {
+    display: flex;
+    height: 94vh;
+}
+
+.homeownerCreateReadingsLeft {
+    flex: 0.6;
+    background-image: url(https://newforestescapes.com/wp-content/uploads/2022/04/IMG_4869-640x500.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homeownerCreateReadingsRight {
+    flex: 1;
+}
+
+.homeownerCreateReadingsTitle {
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    opacity: 0.7;
+    color: white;
+    font-size: 50px;
+    font-family: Lora;
+    font-size: 4em;
+}
+
+.homeownerCreateReadingsRight {
+    background-color: rgb(223, 220, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeownerCreateReadingsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeownerCreateReadingsLabel {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+    font-family: Lora;
+}
+
+.homeownerCreateReadingsInput {
+    width: 40%;
+    margin-top: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.homeownerCreateReadingsInput:focus {
+    outline: none;
+}
+
+.homeownerCreateReadingsInput:hover {
+    outline: 2px solid rgb(144, 166, 218);
+}
+
+/* .homeownerCreateReadingsSubmit {
+    width: 10em;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(0 121 211);
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    border: none;
+} */
+
+.homeownerCreateReadingsSubmit:hover {
+    background-color: rgb(49, 138, 206);
+}
+
+hr {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.homeownerCreateReadingsPicture {
+    width: 40%;
+    margin-top: 15px;
+    padding: 8px;
+    padding-bottom: 110px;
+    border: none;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+.homeownerCreateReadingsPicture:focus {
+    outline: none;
+    border: none;
+}
