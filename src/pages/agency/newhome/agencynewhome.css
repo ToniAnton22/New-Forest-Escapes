@@ -1,21 +1,21 @@
-.homeownerSetEnergyContainer {
+.agencyNewHomeContainer {
     display: flex;
     height: 100vh;
 }
 
-.homeownerSetEnergyLeft {
+.agencyNewHomeLeft {
     flex: 0.6;
-    background-image: url(https://newforestescapes.com/wp-content/uploads/2020/10/IMG_0160-640x500.jpg);
+    background-image: url(https://newforestescapes.com/wp-content/uploads/2023/02/Ferny-Down-Web-28.2.23-7.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.homeownerSetEnergyRight {
+.agencyNewHomeRight {
     flex: 1;
 }
 
-.homeownerSetEnergyTitle {
+.agencyNewHomeTitle {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -30,27 +30,28 @@
     font-size: 4em;
 }
 
-.homeownerSetEnergyRight {
+.agencyNewHomeRight {
     background-color: rgb(223, 220, 220);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.homeownerSetEnergyForm {
+.agencyNewHomeForm {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.homeownerSetEnergyLabel {
+.agencyNewHomeLabel {
     text-align: center;
     margin-top: 10px;
     font-weight: 400;
     font-family: Lora;
 }
 
-.homeownerSetEnergyInput {
+
+.agencyNewHomeInput {
     width: 40%;
     margin-top: 15px;
     padding: 8px;
@@ -58,24 +59,57 @@
     border-radius: 4px;
 }
 
-.homeownerSetEnergyInput:focus {
+.agencyNewHomeInput:focus {
     outline: none;
 }
 
-.homeownerSetEnergyInput:hover {
+.agencyNewHomeInput:hover {
     outline: 2px solid rgb(144, 166, 218);
 }
 
-.homeownerSetEnergySubmit:hover {
-    background-color: rgb(49, 138, 206);
+.agencyNewHomeBtn {
+    width: 10em;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.agencyNewHomeBtn:hover {
+    background-color: #6ab46d;
 }
 
 @media only screen and (max-width: 1024px) {
-    .homeownerSetEnergyContainer {
+    .agencyNewHomeContainer {
         flex-direction: column;
     }
 
-    .homeownerSetEnergyTitle {
+    .agencyNewHomeTitle {
+        height: 40vh;
+    }
+
+    .agencyNewHomeInput {
+        width: 60%;
+    }
+
+    #delegate {
+        width: 60%;
+    }
+
+    .agencyNewHomeTitle {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .agencyNewHomeContainer {
+        flex-direction: column;
+    }
+
+    .agencyNewHomeTitle {
         height: 40vh;
     }
 
@@ -83,19 +117,7 @@
         width: 60%;
     }
 
-    .homeownerSetEnergyTitle {
+    .agencyNewHomeTitle {
         font-size: 40px;
     }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1400px) {
-
-}
-
-@media screen and (min-width: 1401px) and (max-width: 1898px) {
-
-}
-
-@media only screen and (min-width: 1899px) {
-
 }

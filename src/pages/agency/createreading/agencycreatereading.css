@@ -1,22 +1,22 @@
-.homeownerCreateReadingsContainer {
+.agencyCreateReadingsContainer {
     display: flex;
-    height: 100vh;
+    height: 94vh;
 }
 
-.homeownerCreateReadingsLeft {
+.agencyCreateReadingsLeft {
     flex: 0.6;
-    background-image: url(https://newforestescapes.com/wp-content/uploads/2022/04/IMG_4869-640x500.jpg);
+    background-image: url(https://newforestescapes.com/wp-content/uploads/2023/02/Ferny-Down-Web-28.2.23-104.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.homeownerCreateReadingsRight {
+.agencyCreateReadingsRight {
     flex: 1;
 }
 
-.homeownerCreateReadingsTitle {
-    height: 100vh;
+.agencyCreateReadingsTitle {
+    height: 94vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,27 +30,27 @@
     font-size: 4em;
 }
 
-.homeownerCreateReadingsRight {
+.agencyCreateReadingsRight {
     background-color: rgb(223, 220, 220);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.homeownerCreateReadingsForm {
+.agencyCreateReadingsForm {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.homeownerCreateReadingsLabel {
+.agencyCreateReadingsLabel {
     text-align: center;
     margin-top: 10px;
     font-weight: 400;
     font-family: Lora;
 }
 
-.homeownerCreateReadingsInput {
+.agencyCreateReadingsInput {
     width: 40%;
     margin-top: 15px;
     padding: 8px;
@@ -59,15 +59,15 @@
     text-align: center;
 }
 
-.homeownerCreateReadingsInput:focus {
+.agencyCreateReadingsInput:focus {
     outline: none;
 }
 
-.homeownerCreateReadingsInput:hover {
+.agencyCreateReadingsInput:hover {
     outline: 2px solid rgb(144, 166, 218);
 }
 
-/* .homeownerCreateReadingsSubmit {
+/* .agencyCreateReadingsSubmit {
     width: 10em;
     margin-top: 20px;
     padding: 10px;
@@ -79,7 +79,7 @@
     border: none;
 } */
 
-.homeownerCreateReadingsSubmit:hover {
+.agencyCreateReadingsSubmit:hover {
     background-color: rgb(49, 138, 206);
 }
 
@@ -89,7 +89,7 @@ hr {
     margin-bottom: 10px;
 }
 
-.homeownerCreateReadingsPicture {
+.agencyCreateReadingsPicture {
     width: 40%;
     margin-top: 15px;
     padding: 8px;
@@ -99,29 +99,7 @@ hr {
     pointer-events: none;
 }
 
-.homeownerCreateReadingsPicture:focus {
+.agencyCreateReadingsPicture:focus {
     outline: none;
     border: none;
-}
-
-@media only screen and (max-width: 1024px) {
-    .homeownerCreateReadingsContainer {
-        flex-direction: column;
-    }
-
-    .homeownerCreateReadingsTitle {
-        height: 20vh;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1400px) {
-
-}
-
-@media screen and (min-width: 1401px) and (max-width: 1898px) {
-
-}
-
-@media only screen and (min-width: 1899px) {
-
 }

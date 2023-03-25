@@ -1,7 +1,7 @@
-import "./header.css"
+import "./agencyheader.css"
 import React from "react"
 // import { faCentercode } from "@fortawesome/free-brands-svg-icons"
-import { FaTimes, FaBars } from "react-icons/fa"
+// import { FaTimes, FaBars } from "react-icons/fa"
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -24,23 +24,25 @@ export default function Header() {
       </div>
       <div className="topCenter">
         <ul className="topList"ref={navRef}>
-          <li className="topListItem"><Link className="link" to="/homeowner">Home</Link></li>
-          <li className="topListItem"><Link className="link" to="/setenergy">Set Energy Usage</Link></li>
-          <li className="topListItem"><Link className="link" to="/energyusage">View Energy Usage</Link></li>
-          <li className="topListItem"><Link className="link" to="/instructions">Instructions</Link></li>
-          <li className="topListItem"><Link className="link" to="/generatemeter">Meter Reading</Link></li>
-          <li className="topListItem"><Link className="link" to="/createreadings">Create Meter Reading</Link></li>
+          <li className="topListItemAgency"><Link className="link" to="/agency">Home</Link></li>
+          {/* <li className="topListItemAgency"><Link className="link" to="/setenergy">Set Energy Usage</Link></li>
+          <li className="topListItemAgency"><Link className="link" to="/energyusage">View Energy Usage</Link></li>
+          <li className="topListItemAgency"><Link className="link" to="/instructions">Instructions</Link></li>
+          <li className="topListItemAgency"><Link className="link" to="/generatemeter">Meter Reading</Link></li>
+          <li className="topListItemAgency"><Link className="link" to="/createreadings">Create Meter Reading</Link></li> */}
+          <li className="topListItemAgency"><Link className="link" to="/totalcost">Total Cost</Link></li>
+          <li className="topListItemAgency"><Link className="link" to="/newhome">New Home</Link></li>
           {/* <li className="topListItem">{"LOGOUT"}</li> */}
           <button className ="nav-btn nav-close-btn" onClick={hideNavbar}>
-          <FaTimes />
+          {/* <FaTimes /> */}
           </button>
           </ul>
       </div>
       <div className="topRight">
       <button className ="nav-btn" onClick={showNavbar}>
-          <FaBars />
+          {/* <FaBars /> */}
           </button>
-      <li className="topListItem"><Link className="link" to="/myaccount">My Account</Link></li>
+      <li className="topListItemAgency"><Link className="link" to="/login">My Account</Link></li>
       </div>
     </div>
   )

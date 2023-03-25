@@ -1,0 +1,15 @@
+.backBtn {
+    width: 10em;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.backBtn:hover {
+    background-color: rgb(225, 76, 76);
+}

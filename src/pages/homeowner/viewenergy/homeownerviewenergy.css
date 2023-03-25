@@ -1,6 +1,6 @@
 .homeownerViewEnergyContainer {
     display: flex;
-    height: 94vh;
+    height: 100vh;
 }
 
 .homeownerViewEnergyLeft {
@@ -16,7 +16,7 @@
 }
 
 .homeownerViewEnergyTitle {
-    height: 94vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +58,15 @@
     border-radius: 4px;
 }
 
+#delegate {
+    width: 40%;
+    margin-top: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+}
+
 .homeownerViewEnergyInput:focus {
     outline: none;
 }
@@ -80,4 +89,43 @@
 
 .homeownerViewEnergySubmit:hover {
     background-color: rgb(49, 138, 206);
+}
+
+@media only screen and (max-width: 1024px) {
+    .homeownerViewEnergyContainer {
+        flex-direction: column;
+    }
+
+    .homeownerViewEnergyTitle {
+        height: 40vh;
+    }
+
+    .homeownerViewEnergyInput {
+        width: 60%;
+    }
+
+    #delegate {
+        width: 60%;
+    }
+
+    .homeownerViewEnergyTitle {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .homeownerViewEnergyContainer {
+        flex-direction: column;
+    }
+
+    .homeownerViewEnergyTitle {
+        height: 40vh;
+    }
+
+    .agencyTotalCostInput {
+        width: 60%;
+    }
+
+    .homeownerViewEnergyTitle {
+        font-size: 40px;
+    }
 }

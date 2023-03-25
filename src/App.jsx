@@ -7,18 +7,35 @@ import HomeownerViewEnergy from "./pages/homeowner/viewenergy/HomeownerViewEnerg
 import HomeownerInstructions from "./pages/homeowner/instructions/HomeownerInstructions"
 import HomeownerGenerateMeter from './pages/homeowner/generatemeter/HomeownerGenerateMeter';
 import HomeownerCreateReadings from './pages/homeowner/createreadings/HomeownerCreateReadings';
-
+import AgencyHomepage from "./pages/agency/homepage/AgencyHomepage"
+import AgencyTotalCost from "./pages/agency/totalcost/AgencyTotalCost"
+import AgencyNewHome from "./pages/agency/newhome/AgencyNewHome"
+import VisitorHomepage from "./pages/visitor/homepage/VisitorHomepage"
+import Login from "./pages/account/login/Login"
+import Register from "./pages/account/register/Register"
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<HomeownerHomepage />} />
+        {/* Homeowner */}
+        <Route exact path="/homeowner" element={<HomeownerHomepage />} />
         <Route exact path="/setenergy" element={<HomeownerSetEnergy />} />
         <Route exact path="/energyusage" element={<HomeownerViewEnergy />} />
         <Route exact path="/instructions" element={<HomeownerInstructions />} />
         <Route exact path="/generatemeter" element={<HomeownerGenerateMeter />} />
         <Route exact path="/createreadings" element={<HomeownerCreateReadings />} />
+        {/* Agency  */}
+        <Route exact path="/agency" element={<AgencyHomepage />} />
+        <Route exact path="/totalcost" element={<AgencyTotalCost />} />
+        <Route exact path="/newhome" element={<AgencyNewHome />} />
+        {/* Visitor  */}
+        <Route exact path="/" element={<HomeownerHomepage />} />
+        <Route exact path="/visitor" element={<VisitorHomepage />} />
+        <Route exact path="/totalcost" element={<AgencyNewHome />} />
+        {/* Account  */}
+        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   )

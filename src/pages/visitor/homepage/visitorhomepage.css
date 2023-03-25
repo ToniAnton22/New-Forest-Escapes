@@ -13,28 +13,31 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-.homeownerHomeContainer {
+.box-inside p {
+    margin-top: 3px
+}
+
+.visitorHomeContainer {
     display: flex;
     flex-direction: column;
     height: 94vh;
 }
 
-.homeownerHomeImage {
+.visitorHomeImage {
     display: flex;
     flex: 1.4;
     justify-content: center;
     align-items: center;
     height: 200px;
-    background-image: url(https://newforestescapes.com/wp-content/uploads/2022/10/Ridge-Cottage-Garden-16.9.22-21-1500x800.jpg);
+    background-image: url(https://newforestescapes.com/wp-content/uploads/2023/02/Ferny-Down-Web-28.2.23-10.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.homeownerHomeTitle {
+.visitorHomeTitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,11 +51,11 @@ html {
     font-family: Lora;
 }
 
-.homeownerWrapper {
+.visitorWrapper {
     flex: 2;
 }
 
-.homeownerDashboardTop, .homeownerDashboardBot {
+.visitorDashboardTop, .visitorDashboardBot {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,15 +63,15 @@ html {
     gap: 30px;
 }
 
-.homeownerDashboardTop {
+.visitorDashboardTop {
     margin-top: 50px;
 }
 
-.homeownerDashboardBot {
+.visitorDashboardBot {
     margin-top: 20px;
 }
 
-.box {
+.boxVisitor {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +86,7 @@ html {
     text-decoration: none;
 }
 
-.box:hover {
+.boxVisitor:hover {
     background-color: rgb(207, 217, 231);
 }
 
@@ -91,44 +94,40 @@ img {
     height: 100px;
 }
 
-  .homeownerHomeTitleText {
+a, a:visited, a:hover, a:active {
+    
+  }
+
+  .visitorHomeTitleText {
     font-size: 40px;
   }
 
-  .homeownerHomeText {
+  .visitorHomeText {
     font-size: 20px;
   }
 
-  .homeownerHomeTitle p {
+  .visitorHomeTitle p {
     font-size: 20px;
   }
 
   @media only screen and (max-width: 1024px) {
 
-    .homeownerDashboardTop, .homeownerDashboardBot {
+    .visitorDashboardTop, .visitorDashboardBot {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 5px;
     }
 
-
-    .box {
+    .boxVisitor {
         width: 100%;
-        height: 100px;
+        height: 180px;
         /* height: 180px; */
     }
 
-    .homeownerDashboardTop {
+    .visitorDashboardTop {
         margin-top: 10px;
-    }
-
-    .homeownerDashboardBot {
-        margin-top: 10px;
-    }
-    .homeownerHomeTitle {
-        height: 100%;
     }
 }
 

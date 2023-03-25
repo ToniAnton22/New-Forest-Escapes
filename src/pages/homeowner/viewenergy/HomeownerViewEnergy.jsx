@@ -1,13 +1,15 @@
 import './homeownerviewenergy.css'
 import React from 'react'
-import Header from '../../../components/header/Header'
 import BufferBtn from '../../../components/bufferBtn/BufferBtn'
 import QRCode from "react-qr-code";
+import { useNavigate } from 'react-router-dom';
+import { IoHome } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 export default function HomeownerViewEnergy() {
+    const navigate = useNavigate();
   return (
     <>
-    <Header/>
     <div className="homeownerViewEnergyContainer">
         <div className="homeownerViewEnergyLeft">
         <div className="homeownerViewEnergyBackground">
@@ -18,6 +20,7 @@ export default function HomeownerViewEnergy() {
         </div>
         <div className="homeownerViewEnergyRight">
             <form className='homeownerViewEnergyForm'>
+            <Link className="" onClick={() => navigate(-1)}><IoHome size="3em" color="black"/></Link>
                 <label className='homeownerViewEnergyLabel'>
                     Home Address
                 </label>
@@ -33,7 +36,12 @@ export default function HomeownerViewEnergy() {
                 <label className='homeownerViewEnergyDelegate'>
                     Delegate Ability
                 </label>
-                <input type="text" className='homeownerViewEnergyInput'/>
+                <select name="delegate" id="delegate">
+                    <option value="cleaner">Cleaner</option>
+                    <option value="gardener">Gardener</option>
+                    <option value="propertyManager">Property Manager</option>
+                    <option value="electrician">Electrician</option>
+                </select>
                 <QRCode 
         style={{ height: "auto", maxWidth: "100px", width: "100px", marginTop: "16px" }}
         value='google.com'/>

@@ -1,12 +1,14 @@
 import './homeownersetenergy.css'
 import React from 'react'
-import Header from '../../../components/header/Header'
 import SubmitBtn from '../../../components/submitBtn/SubmitBtn'
+import { IoHome } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export default function HomeownerSetEnergy() {
+    const navigate = useNavigate();
   return (
     <>
-    <Header/>
     <div className="homeownerSetEnergyContainer">
         <div className="homeownerSetEnergyLeft">
         <div className="homeownerSetEnergyBackground">
@@ -17,6 +19,7 @@ export default function HomeownerSetEnergy() {
         </div>
         <div className="homeownerSetEnergyRight">
             <form className='homeownerSetEnergyForm'>
+            <Link className="" onClick={() => navigate(-1)}><IoHome size="3em" color="black"/></Link>
                 <label className='homeownerSetEnergyLabel'>
                     Current kWh Rate
                 </label>
