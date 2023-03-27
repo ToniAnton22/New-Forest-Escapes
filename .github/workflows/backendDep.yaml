@@ -1,0 +1,31 @@
+name: Check Backend Dependecies
+on:
+  pull_request:
+    branches:
+      -backend
+      -main
+
+jobs:
+  dependecies:
+    runs-on: ubuntu-latest
+    setps:
+
+      -name: Checkout code
+       uses: actions/checkout@v2
+
+      -name: Install Backend dependecies
+       working-directory: backend
+       run: npm install
+      
+      - name: Check for outdated dependecies
+        working-directory: backend
+        runs: npm outdated
+      
+      - name: Fail if outdated dependecies found
+        run: |
+          if [[$(npm outdated --prefix backend | wc -l) -gt 1]]; then
+            echo "Oudated dependecies found"
+            exit 1
+          else
+            echo "All Dependecies up to date"
+          fi
