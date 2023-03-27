@@ -49,7 +49,7 @@ router.post('/register',async (req,res)=>{
 
 router.get('/session',(req,res) =>{
     try{
-        if(!req.locals){
+        if(!req.session){
             res.status(403).send('No sessions available')
         }else{
             res.json(req.locals)
