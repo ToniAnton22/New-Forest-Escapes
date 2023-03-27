@@ -3,6 +3,14 @@ const mongoose = require("mongoose")
 const Schema = mongoose.schema
 
 const usersSchema = new Schema({
+  email: {
+    type:String,
+    required: true,
+  },
+  password:{
+    type: String,
+    required: true,
+  },
   FirstName: {
     type: String,
     required: true,
@@ -13,8 +21,11 @@ const usersSchema = new Schema({
   },
   delegated: {
     type: String,
-    required: true,
   },
+  type: {
+    type:String,
+    required: true,
+  }
 })
 
 module.exports = mongoose.model("Users", usersSchema)
